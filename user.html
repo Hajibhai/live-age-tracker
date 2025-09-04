@@ -2,37 +2,32 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>User Portal - Live Age Tracker</title>
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
   <header>
     <h2>User Portal</h2>
-    <nav>
-      <a href="user.html">Dashboard</a>
-      <a href="index.html">Logout</a>
-    </nav>
+    <button onclick="localStorage.clear(); window.location.href='login.html'">Logout</button>
   </header>
 
-  <main>
-    <h3>Welcome, <span id="userName">User</span></h3>
-    <section>
-      <h4>Add Person</h4>
-      <form id="addPersonForm">
-        <input type="text" id="profileName" placeholder="Profile Name" required>
-        <input type="text" id="category" placeholder="Category" required>
-        <input type="date" id="dob" required>
-        <textarea id="description" placeholder="Short Description"></textarea>
-        <input type="url" id="imageUrl" placeholder="Image URL">
-        <button type="submit">Add</button>
-      </form>
-    </section>
-    <section id="peopleList">
-      <h4>Your People</h4>
-      <div id="listContainer"></div>
-    </section>
-  </main>
-  <script src="js/app.js"></script>
+  <section>
+    <h3>Add Person</h3>
+    <form id="addPersonForm">
+      <input type="text" id="profileName" placeholder="Profile Name" required>
+      <input type="text" id="category" placeholder="Category (Actor, Sports...)" required>
+      <input type="date" id="dob" required>
+      <textarea id="description" placeholder="Short description"></textarea>
+      <input type="text" id="imageUrl" placeholder="Image URL (optional)">
+      <button type="submit">Add Person</button>
+    </form>
+  </section>
+
+  <section>
+    <h3>People List</h3>
+    <div id="listContainer" class="grid"></div>
+  </section>
+
+  <script src="assets/js/app.js"></script>
 </body>
 </html>

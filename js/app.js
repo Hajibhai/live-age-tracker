@@ -1,7 +1,7 @@
 // =======================
 // CONFIG
 // =======================
-const API_ENDPOINT = "YOUR_WEB_APP_URL"; // <- Replace with your Apps Script Web App URL
+const API_ENDPOINT = "https://script.google.com/macros/s/AKfycbyqIsflhD1fBfRzpMHOMl_EGiXDBHampb0WWUL46_MzWOyX5NVA0hZyA2IYvLR67C-yhA/exec"; // <- Replace with your Apps Script Web App URL
 
 // =======================
 // API HELPER FUNCTION
@@ -214,3 +214,4 @@ function calculateAge(dob) {
   const ageDate = new Date(diff);
   return Math.abs(ageDate.getUTCFullYear() - 1970);
 }
+

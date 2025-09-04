@@ -1,16 +1,15 @@
 live-age-tracker/
 │
-├── index.html         # Landing Page
-├── login.html         # Login Page
-├── register.html      # Register Page
-├── user.html          # User Portal
-├── admin.html         # Admin Portal
+├── index.html        # Home page (guest portal)
+├── register.html     # User registration
+├── login.html        # Login page
+├── user.html         # User portal (add/view people)
+├── admin.html        # Admin portal (manage users & people)
 │
-├── css/
-│   └── style.css      # Global Styles
-│
-├── js/
-│   └── app.js         # Main JS (frontend logic & API calls)
-│
-└── assets/
-    └── images/        # Logo & uploaded images
+├── assets/
+│   ├── css/
+│   │   └── style.css
+│   ├── js/
+│   │   └── app.js
+│   └── images/
+│       └── default.jpg
